@@ -1,4 +1,27 @@
 function fizzBuzz(n) {
+  let newArray = []
+  for (let index = 1; index <= n; index++) {
+    if(index % 3 === 0){
+      if(index % 5 === 0){
+        newArray.push("FizzBuzz")
+      }else{
+        newArray.push("Fizz")
+      }
+    }else if(index % 5 === 0){
+        if(index % 3 === 0){
+          newArray.push("FizzBuzz")
+        }else{
+          newArray.push("Buzz")
+        }
+    }else{
+      newArray.push(index)
+    }
+
+  
+ 
+    
+  }
+  return  newArray
   //Start coding here
 }
 
